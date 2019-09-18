@@ -20,23 +20,60 @@
             <li class="list-name">Excercise</li> -->
         </ul>
 
-        <form action="" data-new-list-form>
-            <input type="text" class="new list" data-new-list-input placeholder="new list name" aria-label="new list name"/>
-            <button class="btn create" aria-label="create new list"></button>
-        </form>
 
 
+        <div class="new-task-creator">
+                <form action="" data-new-list-form>
+                        <input type="text" class="new list" data-new-list-input placeholder="new list name" aria-label="new list name"/>
+                        <button class="btn create" aria-label="create new list"></button>
+                    </form>
+
+        </div>
+        <div class="delete-stuff">
+                <button class="btn delete">Clear completed tasks</button>
+                <button class="btn delete" data-delete-list-button>Delete list</button>
+        </div>
+
+        <div class="todo-list" data-list-display-container>
+                <div class="todo-header">
+                    <h2 class="list-title" data-list-title>Netflix</h2>
+                    <p class="task-count" data-list-count>3 tasks remaining</p>
+                </div>
+        </div>
+
+        <div class="todo-body">
+            <div class="tasks" data-tasks>
+                <div class="tasks">
+                    <input type="checkbox" id="task-1"/>
+                    <label for="task-1">
+                        <span class="custom-checkbox"></span>
+                        start final project
+                    </label>
+                </div>
+                <!-- END OF task one -->
+
+
+            </div>
+        </div>
+        
 
 
     </div>
 
+   
 
 
 
 
 
-
-
+<template id="task-template">
+    <div class="task">
+            <input type="checkbox"/>
+            <label>
+                <span class="custom-checkbox"></span>
+            </label>
+    </div>
+</template>
 
 
 
